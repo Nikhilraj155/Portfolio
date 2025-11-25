@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="inner reveal">
+  <h2>About <span>Me</span></h2>
+
+  <!-- Data Scientist intro -->
+
+
+  <!-- Backend Developer intro (new) -->
+  <div class="card" style="margin:16px 0;">
+    <h3>Backend Developer</h3>
+    <p>Hi, I'm Granth Yadav — a passionate Backend Developer who loves building powerful, secure, and scalable server‑side applications. I specialize in creating efficient backend systems that connect data, logic, and performance seamlessly.</p>
+    <p>With a strong foundation in Python, Flask, and FastAPI, I focus on developing APIs, managing databases, and integrating AI‑driven features into modern web applications. My approach to development is clean, structured, and performance‑oriented — ensuring reliability at every stage of the workflow.</p>
+    <p>💡 I enjoy solving complex technical problems, optimizing performance, and architecting systems that scale effortlessly. Whether it’s designing RESTful APIs, managing large datasets, or deploying cloud‑based applications — I’m all about turning backend logic into real‑world impact.</p>
+  </div>
+
+  <!-- Quick facts cards -->
+  <div class="about-cards">
+    <div class="card">
+      <h3>Location</h3>
+      <p>India</p>
+    </div>
+    <div class="card">
+      <h3>Education</h3>
+      <p>B.Tech in Computer Science</p>
+    </div>
+    <div class="card">
+      <h3>Interests</h3>
+      <p>AI, Machine Learning, Data Visualization, Problem Solving</p>
+    </div>
+    <div class="card">
+      <h3>Tools</h3>
+      <p>Python, SQL, Pandas, NumPy, Scikit‑Learn, TensorFlow, Power BI</p>
+    </div>
+  </div>
+
+  <!-- Core Expertise (new) -->
+  <h2 style="margin-top:28px;">Core <span>Expertise</span></h2>
+  <div class="details-grid">
+    <div class="detail">
+      <span class="k">Languages</span>
+      <span class="v">Python</span>
+    </div>
+    <div class="detail">
+      <span class="k">Frameworks</span>
+      <span class="v">Flask, FastAPI</span>
+    </div>
+    <div class="detail">
+      <span class="k">Databases</span>
+      <span class="v">PostgreSQL, MySQL, MongoDB</span>
+    </div>
+    <div class="detail">
+      <span class="k">APIs</span>
+      <span class="v">RESTful APIs, JWT Auth, Third‑party Integrations</span>
+    </div>
+    <div class="detail">
+      <span class="k">DevOps & Tools</span>
+      <span class="v">Docker, Git, AWS</span>
+    </div>
+    <div class="detail">
+      <span class="k">Special Focus</span>
+      <span class="v">AI Integrations, Automation, Scalable Architecture</span>
+    </div>
+  </div>
+
+  <!-- Personal Details -->
+  <h2 style="margin-top:28px;">Personal <span>Details</span></h2>
+  <div class="details-grid">
+    <div class="detail">
+      <span class="k">Gender</span>
+      <span class="v">Male</span>
+    </div>
+    <div class="detail">
+      <span class="k">Date of Birth</span>
+      <span class="v">4 December 2003</span>
+    </div>
+    <div class="detail">
+      <span class="k">Languages Known</span>
+      <span class="v">English, Hindi</span>
+    </div>
+    <div class="detail">
+      <span class="k">Contact Number</span>
+      <span class="v">+91 7880254149</span>
+    </div>
+    <div class="detail">
+      <span class="k">Strengths</span>
+      <span class="v">Adaptable, Quick Learner, Effective Team Player</span>
+    </div>
+    <div class="detail">
+      <span class="k">Current Address</span>
+      <span class="v">Lig, Indore, Madhya Pradesh – 452012, India</span>
+    </div>
+  </div>
+
+  <a href="{{ url_for('index') }}" class="btn" style="margin-top:24px;">Back to Home</a>
+</section>
+{% endblock %}

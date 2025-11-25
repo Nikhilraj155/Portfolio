@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title if title else "My Portfolio" }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="sidebar-content">
+        <div class="profile">
+          <img src="{{ url_for('static', filename='img/23040DBCA0013851.jpg') }}" alt="Profile Photo">
+          <h2>Granth Yadav</h2>
+          <p class="subtitle">Data Scientist</p>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('home') }}">Services</a></li>
+            <li><a href="{{ url_for('projects') }}">Projects</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+
+          </ul>
+        </nav>
+      </div>
+
+      <footer>
+        <p>© 2025 All rights reserved</p>
+        <p>Made with ❤️ by You</p>
+      </footer>
+    </aside>
+
+    <main class="content">
+      {% block content %}{% endblock %}
+    </main>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
